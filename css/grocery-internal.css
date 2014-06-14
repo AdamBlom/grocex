@@ -1,0 +1,517 @@
+/*Internal CSS for GrocEx*/
+
+html {
+	/*background: url(../img/tree_bark.png); */
+	background: #777D7F;
+}
+
+header {
+	padding: 0.2em 1em;
+	background: #222D2F;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: #fff;
+	float:left;
+	width: 20%;
+	color: #4FDFAF;
+}
+
+h2 {
+	font-size: 0.9em;
+	color: #ccc;
+	float: left;
+	width: 80%;
+	min-width:225px;
+	padding: 10px 20px;
+}
+
+h2 em {
+	text-align: center;
+
+}
+
+#grocery-wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#contentwrapper {
+	background:#777D7F;
+}
+
+main {
+	margin: 0 auto 3em auto;
+}
+
+nav {
+	font-family: sofia_prolight, Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+nav ul {
+	background: #444D4F ;
+}
+
+nav ul li {
+	float:left;
+	width: 50%;
+}
+
+#viewall {
+	width: 100%;
+}
+nav ul li a, nav ul li span {
+	display: block;
+	text-align: center;
+	padding: 9px 16px;
+	text-align: center;
+	color: #eee;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+nav ul li:hover a, nav ul li:hover span, nav ul li span.nav-active {
+	color: #333;
+	background: #4FDFAF;
+}
+
+.js nav ul li:hover span {
+	cursor: pointer;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul li ul {
+	position: absolute;
+	top: 32px;
+	z-index: 100;
+	color: #eee;
+	background: #4FDFAF;
+	padding: 8px;
+	min-width: 150%;
+}
+
+.no-js nav ul li ul {
+	display: none;
+}
+
+.no-js nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li #sortfilters {
+	left: 0;
+}
+
+nav ul li #email-list {
+	right: 0;
+}
+
+#filterTitle {
+	color: #4FDFAF;
+	margin: 0.2em;
+	font-size: 1.1em;
+}
+
+#filtertags {
+	position: relative;
+	z-index: 5;
+	padding: 0.5em;
+	background: #777D7F;
+	min-height: 3em;
+}
+
+#filtertags.hidden-tags {
+	display: none;
+}
+
+.filterTag  {
+	display: inline-block;
+	margin: 0.2em;
+
+}
+
+.filterTag a, .filterTag p {
+	font-size: 0.9em;
+	text-decoration: none;
+	color: #4FDFAF;
+	padding: 0.3em 0.4em;
+}
+
+.filterTag a:hover {
+	color: #AFFFFF;
+}
+
+.removefiltertag {
+	color: #fff;
+	font-family: journalregular, Arial, Helvetica, sans-serif;
+	position: relative;
+	top: -5px;
+}
+
+.filterTag a:hover .removefiltertag {
+	color: #FFAFFF;
+}
+
+nav ul form {
+	font-size: 14px;
+	width: 90%;
+	color: #333;
+	margin: 0 auto;
+}
+
+.styled-select {
+	background: url(../img/dropdownbutton.png) no-repeat right #fff;
+	background-size: contain;
+	overflow: hidden;
+	height: 30px;
+}
+
+.styled-select-alt {
+	background: url(../img/dropdownbutton-alt.png) no-repeat right #fff;
+	background-size: contain;
+	overflow: hidden;
+	height: 30px;
+}
+
+.styled-select select, .styled-select-alt select {
+	border: none;
+	padding: 7px ;
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none; /*Not currently supported*/
+	-o-appearance: none;
+	appearance: none;
+	text-indent: 0.01px; /* These two lines needed to hide arrow in FF*/
+ 	text-overflow: "";
+	background: transparent;
+	outline: none;
+}
+
+.styled-select select::-ms-expand, .styled-select-alt select::-ms-expand {
+    display: none; /*Needed to hide dropdown arrow in IE10+*/
+}
+
+input[type='submit'].formbutton {
+	background: #333;
+	color: #fff;
+	margin-bottom: 1em;
+}
+
+input[type='submit'].formbutton:hover {
+	background: #1FAF7F;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type='submit'].formbutton:active {
+	background: #fff;
+	color: #333;
+}
+
+form input, form label {
+	display: block;
+	
+}
+
+ul form label {
+	text-align: left;
+	padding: 0.3em;
+}
+
+form input, form select {
+	width: 100%;
+	border: none;
+	padding: 0.3em;
+	outline: none;
+	height: 30px;
+}
+
+.js form input[type='date'] {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	-o-appearance:none;
+	appearance: none;
+}
+
+main form {
+	min-height: 400px;
+	padding-bottom: 2em;
+}
+
+#itemlist li, #profilelist li {
+	width:100%;
+	margin: 0 auto;
+	color: #eee;
+	padding: 1em 1em;
+	position: relative;
+	line-height: 1.3em;
+	-webkit-transition: color 0.25s; /*Used for jQuery animation*/
+	-moz-transition: color 0.25s;
+	-ms-transition: color 0.25s;
+	-o-transition: color 0.25s;
+	transition: color 0.25s;
+	-webkit-transition: background-color 0.25s; /*Used for jQuery animation*/
+	-moz-transition: background-color 0.25s;
+	-ms-transition: background-color 0.25s;
+	-o-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+}
+
+#itemlist li.cart-checked {
+	background: #555D5F;
+	color: #888D8F;
+	border-left: 5px solid #444D4F !important;
+}
+
+.list-info i {
+	width: 10%;
+	min-width: 20px;
+	text-align: center;
+}
+
+.cat-gray {
+	border-left: 5px solid #444D4F
+}
+
+.cat-red {
+	border-left: 5px solid #FF1F9F;
+}
+
+.cat-green {
+	border-left: 5px solid #AFFF5F;
+}
+
+.cat-yellow {
+	border-left: 5px solid #FFFF0F;
+}
+
+.cat-purple {
+	border-left: 5px solid #9F1FFF;
+}
+
+.cat-orange {
+	border-left: 5px solid #FFAF0F;
+}
+
+.cat-white {
+	border-left: 5px solid #FFFFEF;
+}
+
+.cat-pink {
+	border-left: 5px solid #FFAFFF;
+}
+
+.foodname {
+	color: #4FDFAF;
+}
+
+
+#itemlist .listinfo i {
+	width: 20px;
+}
+
+.list-buttons, .list-info {
+	float:left;
+}
+
+
+.list-info {
+	width: 67%;
+	padding: 6px;
+}
+
+.list-buttons {
+	padding: 13px 0;
+	width: 33%;
+	min-width: 82.5px;
+}
+
+.checkbox_wrapper {
+	width: 67%;
+	float:left;
+}
+
+.edit_wrapper {
+	width: 33%;
+	float:left;
+}
+
+.item_checkbox_label, .list-btn {
+	color: #555D5F;
+	display: inline-block;
+	-webkit-transition: color 0.25s;
+	-moz-transition: color 0.25s;
+	-ms-transition: color 0.25s;
+	-o-transition: color 0.25s;
+	transition: color 0.25s;
+	width: 100%;
+}
+
+.list-btn {
+	font-size: 32px;
+	padding: 6px 0;
+	text-align: center;
+}
+
+.cart-checked .delete-btn {
+	color: #FF5F5F;
+}
+
+.cart-checked .edit-btn {
+	visibility: hidden;
+}
+
+.item_checkbox_label {
+	font-size: 52px;
+	padding: 17px 10px;
+	text-align: center;
+}
+
+.item_checkbox_label:hover, .list-btn:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.item_checkbox {
+	visibility:hidden;
+	height: 0px;
+}
+
+.ie8 .checkbox_wrapper {
+	width: 70px;
+	display: inline-block;
+}
+
+.ie8 .item_checkbox {
+	visibility: visible;
+	height: 15px;
+}
+
+.ie8 .item_checkbox_label {
+	color: #ccc;
+	font-size: 16px;
+	width: 30px;
+	background: none;
+}
+
+.item_checkbox:checked + .item_checkbox_label {
+	color: #4FCF9F;
+}
+
+.cancel {
+	width: 60%;
+}
+
+.buttonwrapper {
+	display: block;
+	padding: 0 auto;
+}
+
+#addwrapper, #editwrapper{
+	margin: 0 auto;
+	width: 90%;
+}
+
+#addwrapper h3, #editwrapper h3 {
+	font-size: 1.2em;
+	color: #4FCF9F;
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.cancel, input[type='submit'].formbutton {
+	display: block;
+	margin: 0.5em auto;
+}
+
+.cancel a {
+	display: block;
+}
+.message {
+	text-align: center;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+#removeall {
+	color: #eee;
+}
+
+#removeall label {
+	width: auto;
+}
+
+@media all and (min-width: 550px) {
+	#contentwrapper, nav {
+		width: 90%;
+	}
+
+	#contentwrapper {
+		margin: 0 auto 3em auto;
+	}
+
+	nav {
+		margin: 4em auto 0 auto;
+	}
+
+	nav ul li, #viewall {
+		width: 33.333%;
+	}
+
+	nav ul li #email-list {
+		left: 0;
+	}
+
+	#logout, #nav-profile {
+		width: 50%
+	}
+
+	.list-btn {
+		text-align: left;
+	}
+}
+
+@media all and (min-width: 700px) {
+	nav ul li, #viewall, #logout, #nav-profile {
+		width: 20%;
+	}
+
+	ul#itemlist li {
+		width:50%;
+		float:left;
+	}
+}
+
+@media all and (min-width: 960px) {
+	#contentwrapper, nav  {
+		width: 80%;
+		max-width: 1200px;
+	}
+
+	header {
+		width: 90%;
+		max-width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media all and (min-width: 1200px) {
+
+	ul#itemlist li {
+		width:33.333%;
+	}
+}
+
+
+
+/*TODO: Style Email list form, style add and edit forms, add jquery validation, add jquery header color control.*/

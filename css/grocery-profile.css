@@ -1,0 +1,23 @@
+
+#contentwrapper {
+	min-height: 150px;
+}
+nav ul li {
+	width: 49%;
+}
+
+ul#profilelist li {
+	padding-top: 0;
+}
+
+nav {
+	margin-bottom: 1em;
+}
+
+#filtertags {
+	height: 0;
+}
+
+#editform {
+	
+}

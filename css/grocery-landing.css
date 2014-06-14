@@ -1,0 +1,243 @@
+/*Landing Page CSS for GrocEx*/
+
+
+
+html {
+	background: url(../img/background/bg1-mobile.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	min-height: 100%;
+}
+
+* {
+	font-size: 14px;
+}
+
+h1, h2 {
+	color: #eee;
+}
+
+input[type='submit'], input[type='reset'] {
+	background: #000;
+	color: #00E600;
+	padding: 0.3em;
+	display: inline-block;
+	border: none;
+	width: 8em;
+	font-size: 0.9em;
+}
+
+
+
+label {
+	text-align: right;
+	padding: 0.3em;
+	width: 10em;
+	display: inline-block;
+}
+
+#login-background {
+	width: 310px;
+	position: absolute;
+	left: 0;
+	background: #444;
+	opacity: 0.95;
+	padding: 0.5em;
+}
+
+#login-background input[type='text'], #login-background input[type='password']{
+	width: 10em;
+	margin-left: 1em;
+	display: inline-block;
+	border: none;
+	padding: 0.3em;
+	font-size: 0.8em;
+}
+
+#login-background input[type='submit'] {
+	width: 4em;
+	margin-left: 1em;
+}
+
+
+#login-background label {
+	color: #eee;
+	font-size: 0.8em;
+	width: 6em;
+}
+
+
+.landing-description {
+	margin: 1em 0;
+}
+
+#register-background {
+	background: #333;
+	opacity: 0.95;
+	color: #eee;
+	width: 100%;
+	min-width: 400px;
+	position: absolute;
+	top: 15%;
+}
+
+#registerbox {
+	padding: 1em 0.7em 1em 1.2em;
+	background: transparent;
+	width: 340px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #fff;
+	padding: 4px 8px;
+}
+
+
+
+#register-background form#grocery-register {
+	width: 100%;
+	margin-top: 1em;
+
+}
+
+#register-background form#grocery-register .buttonwrap{
+	margin-top: 1em;
+	padding-left: 8em;
+}
+
+#register-background input[type='text'], #register-background input[type='password'],  #register-background input[type='date'], #register-background input[type='email'] {
+	width: 45%;
+	margin-left: 1em;
+	display: inline-block;
+	border: none;
+	padding: 0.3em;
+	font-size: 0.9em;
+}
+
+
+#register-background input[type='reset'] {
+	color: #fff;
+	width: 6em;
+}
+
+input[type='submit']:hover, input[type='reset']:hover {
+	background: #093;
+	color: #333;
+}
+
+input[type='submit']:active, input[type='reset']:active {
+	background: #fff;
+	color: #333;
+}
+
+.message {
+	position: fixed;
+	top: 6em;
+	left: 0;
+}
+
+
+
+
+@media (min-width: 550px) {
+	html {
+		background: url(../img/background/bg1-tablet.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	#register-background {
+		position: absolute;
+		top: 20%;
+		opacity: 0.95;
+	}
+
+	#registerbox {
+		width: 480px;
+	}
+
+	#register-background input[type='reset'] {
+		margin-left: 7em;
+	}
+
+}
+
+@media (min-width: 960px) {
+
+	html {
+		background: url(../img/background/bg1.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	* {
+		font-size: 16px;
+	}
+
+	#login-background {
+		width: 35em;
+	}
+
+	#register-background {
+		background: #333;
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 500px;
+	}
+
+	#registerbox {
+		padding: 1.2em;
+		background: transparent;
+		width: 33%;
+		min-width: 400px;
+		width: 90%;
+	}
+
+	form#grocery-register {
+		width: 25em;
+		margin-top: 1em;
+
+	}
+
+	input[type='text'], input[type='password'], input[type='date'], input[type='email'] {
+		display: inline-block;
+		width: 14em;
+		margin-left: 2em;
+	}
+
+	form#grocery-register label {
+		text-align: right;
+		display: inline-block;
+		width: 10em;
+	}
+
+	form#grocery-register .buttonwrap{
+		margin-top: 1em;
+		padding-left: 12em;
+	}
+
+	#register-background input[type='text'], #register-background input[type='password'], #register-background input[type='date'], #register-background input[type='email'] {
+		border: none;
+		padding: 0.3em;
+		font-size: 0.9em;
+	}
+
+	#register-background form#grocery-register .buttonwrap{
+	padding-left: 6em;
+}
+		
+	label {
+		padding: 0.3em;
+		width: 5em;
+		display: inline;
+	}
+
+}
